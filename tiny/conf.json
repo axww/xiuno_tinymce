@@ -1,0 +1,10 @@
+{
+    "name": "TINY",
+    "brief": "TinyMCE",
+    "version": "2023.05.01",
+    "bbs_version": "4.0",
+    "installed": 0,
+    "enable": 1,
+    "hooks_rank": [],
+    "dependencies": []
+}
