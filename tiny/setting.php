@@ -120,8 +120,8 @@ echo '
 <div><b>全局样式</b></div>
 <div>'.form_textarea('outstyle',empty($tiny['outstyle'])?'':$tiny['outstyle']).'</div>
 <div>.message a{text-decoration:underline !important;}/*链接加下划线*/</div>
+<div>.message img,.message audio,.message video{margin-top:8px !important;}/*媒体比例优化*/</div>
 <div>.message table,.message th,.message td{border:1px solid #999 !important;}/*表格简易样式*/</div>
-<div>.message img,.message audio,.message video{margin-top:8px !important;height:auto !important;}/*媒体比例优化*/</div>
 <div>.message img,.message audio,.message video,.message iframe,.message table{max-width:100% !important;}/*元素最大宽度*/</div>
 <div>@media(min-width:1000px){.message img,.message audio,.message video{max-width:720px !important;}}/*限制大屏宽度*/</div>
 <hr />
