@@ -1,0 +1,8 @@
+<?php //assbbs.com
+// 统一文本换行为P
+if($route=='post'&&!empty($action)&&$action=='update'&&!empty($post['doctype'])){$form_message='<p>'.str_replace(array("\r\n","\r","\n"),'</p><p>',str_replace("\t",'&nbsp;&nbsp;&nbsp;&nbsp;',htmlspecialchars($post['message']))).'</p>';}
+// 编辑后跳转来源页
+if($route=='post'&&!empty($action)&&$action=='update'&&!empty($_SERVER['HTTP_REFERER'])){$location=$_SERVER['HTTP_REFERER'];}
+// 回复后跳转至尾页
+if($route=='post'&&!empty($action)&&$action=='create'){$location='./?tiny_jump&goto&page='.$thread['tid'].'&time='.time();}
+?>
