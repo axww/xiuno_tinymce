@@ -254,7 +254,7 @@ function tiny_init(core, lang, conf) {
             language: 'zh-Hans',
             height: 400,
             selector: '#message',
-            plugins: 'table codesample image media link code wordcount',
+            plugins: 'advlist code codesample image link lists media table wordcount',
             toolbar: 'styles fontsize bold italic underline strikethrough forecolor backcolor table codesample hr image media link unlink removeformat code',
             content_style: '*{max-width:100% !important;}body{color:#333 !important;font-size:15px !important;}img{height:auto !important;}',
             font_size_formats: '12px 14px 15px 16px 18px 36px 72px',
