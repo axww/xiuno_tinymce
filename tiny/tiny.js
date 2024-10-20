@@ -255,7 +255,7 @@ function tiny_init(core, lang, conf) {
             height: 400,
             selector: '#message',
             plugins: 'advlist code codesample image link lists media table wordcount',
-            toolbar: 'bold italic underline strikethrough forecolor backcolor fontsize image media link unlink codesample hr styles numlist bullist table removeformat',
+            toolbar: 'bold italic underline strikethrough forecolor backcolor fontsize image media link unlink codesample hr styles numlist bullist table removeformat code',
             content_style: '*{max-width:100% !important;}body{color:#333 !important;font-size:15px !important;}img{height:auto !important;}',
             font_size_formats: '12px 14px 15px 16px 18px 36px 72px',
             resize: true,
