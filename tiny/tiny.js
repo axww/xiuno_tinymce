@@ -251,15 +251,16 @@ function tiny_init(core, lang, conf) {
     item.onload = function () {
         tinymce.init(Object.assign({
             language_url: lang,
-            language: 'zh-Hans',
+            language: 'zh_CN',
             height: 400,
             selector: '#message',
             plugins: 'advlist code codesample image link lists media table wordcount',
-            toolbar: 'bold italic underline strikethrough forecolor backcolor fontsize image media link unlink codesample hr styles numlist bullist removeformat',
+            toolbar: 'bold italic underline strikethrough forecolor backcolor fontsize image media link unlink codesample hr styles numlist bullist table removeformat',
             content_style: '*{max-width:100% !important;}body{color:#333 !important;font-size:15px !important;}img{height:auto !important;}',
             font_size_formats: '12px 14px 15px 16px 18px 36px 72px',
             resize: true,
             menubar: false,
+            branding: false,
             contextmenu: false,
             elementpath: false,
             smart_paste: false,
@@ -382,7 +383,6 @@ class Jimg {
         this._ = '20221108';
         this.canvas = file || null;
         this.config = conf || {};
-        console.log('https://github.com/aaa-aa-a/jimg#' + this._);
     };
     code(part, exec) {
         if (typeof (exec) == 'undefined') { return [...new Uint8Array(part)].map(b => b.toString(16).padStart(2, '0')).join(''); }
