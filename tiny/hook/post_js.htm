@@ -7,7 +7,7 @@ if(window.location.hash&&!tiny_edit.value){tiny_edit.value=decodeURIComponent(wi
 var tiny_type=['.(empty($tiny['filetype'])?'':('".'.str_replace(',','",".',$tiny['filetype'])).'"').'];
 var tiny_size='.(empty($tiny[G('gid').'_size'])?0:$tiny[G('gid').'_size'].'*1048576').';
 var tiny_jimg='.(empty($tiny['jimg'])?'null':'{'.$tiny['jimg'].'}').';
-window.addEventListener("load",function(){tiny_init("plugin/tiny/core/tinymce.min.js","plugin/tiny/langs/zh-Hans.js",'.(empty($tiny['myconfig'])?'null':'{'.$tiny['myconfig'].'}').')});
+window.addEventListener("load",function(){tiny_init("plugin/tiny/core/tinymce.min.js","plugin/tiny/langs/zh_CN.js",'.(empty($tiny['myconfig'])?'null':'{'.$tiny['myconfig'].'}').')});
 '.(empty($tiny['noattach'])?'':'document.querySelector("#addattach").style.display="none";').'
 </script>
 <script src="plugin/tiny/tiny.js"></script>
